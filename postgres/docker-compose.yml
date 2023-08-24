@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  postgres_team_check:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=admin
+    expose:
+      - 5432
+    ports:
+      - "5432:5432"
